@@ -3,14 +3,11 @@ package com.ol.im.dto;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.ol.im.domain.ItemEntity;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import javax.persistence.Id;
 
 @Data
 public class ItemDto {
-    @Id
     private Long itemNo;
     private String name;
     private Double amount;
